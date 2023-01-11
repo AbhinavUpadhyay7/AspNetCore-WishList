@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WishList.Data
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext : DbContext
     {
         public DbSet<Models.Item> Items { get; set; }
-        public ApplicationDbContext(DbContextOptions options):base(options)
+        public ApplicationDbContext(DbContextOptions options) : base(options)
         {
 
         }
